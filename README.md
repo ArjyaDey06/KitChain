@@ -387,3 +387,5 @@ If you want, the next step can be to add:
 2. a real architecture diagram rendered as a high-quality SVG/PNG asset
 3. actual screenshot cards once UI screens are captured
 4. a polished contributor guide with PR workflow and branch standards
+
+### Author: Arjya Dey
