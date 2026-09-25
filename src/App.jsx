@@ -9,6 +9,8 @@ import Signup from './pages/auth/Signup'
 import Pending from './pages/auth/Pending'
 import Dashboard from './pages/admin/Dashboard'
 import Staff from './pages/admin/Staff'
+import Menu from './pages/admin/Menu'
+import Inventory from './pages/admin/Inventory'
 import TableMap from './pages/waiter/TableMap'
 import OrderBuilder from './pages/waiter/OrderBuilder'
 import KDSBoard from './pages/kitchen/KDSBoard'
@@ -43,8 +45,8 @@ export default function App() {
           {/* Admin Routes */}
           <Route path="/admin/dashboard" element={<ProtectedRoute allowedRoles={['admin']}><Dashboard /></ProtectedRoute>} />
           <Route path="/admin/tables" element={<ProtectedRoute allowedRoles={['admin']}><TableMap /></ProtectedRoute>} />
-          <Route path="/admin/menu" element={<ProtectedRoute allowedRoles={['admin']}><Placeholder title="Menu Management" /></ProtectedRoute>} />
-          <Route path="/admin/inventory" element={<ProtectedRoute allowedRoles={['admin']}><Placeholder title="Inventory" /></ProtectedRoute>} />
+          <Route path="/admin/menu" element={<ProtectedRoute allowedRoles={['admin']}><Menu /></ProtectedRoute>} />
+          <Route path="/admin/inventory" element={<ProtectedRoute allowedRoles={['admin']}><Inventory /></ProtectedRoute>} />
           <Route path="/admin/staff" element={<ProtectedRoute allowedRoles={['admin']}><Staff /></ProtectedRoute>} />
           <Route path="/admin/orders" element={<ProtectedRoute allowedRoles={['admin']}><Placeholder title="Order History" /></ProtectedRoute>} />
           <Route path="/admin/audit" element={<ProtectedRoute allowedRoles={['admin']}><Placeholder title="Audit Logs" /></ProtectedRoute>} />
